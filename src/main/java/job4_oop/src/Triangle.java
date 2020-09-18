@@ -11,26 +11,32 @@ public class Triangle {
         this.third = cp;
     }
 
-    public double period(double a, double b, double c) {
-
-        return -1;
+    public static double period(double a, double b, double c) {
+        double prd = (a + b + c) / 2;
+        return prd;
     }
 
-    public boolean exist(double ab, double ac, double dc) {
-        return false;
+    public static boolean exist(double ab, double ac, double bc) {
+        boolean ex = true;
+        boolean a = ab < bc + ac;
+        boolean b = ac < ab + bc;
+        boolean c = bc < ab + ac;
+        if ((a != b) && (b != c) && (a != c)) {
+            ex = false;
+        }
+        return ex;
     }
 
-    public double area() {
+    public  double area() {
         double rsl = -1;
-        double ab = first.distance(second);
-        double ac = first.distance(third);
-        double bc = second.distance(third);
+        double ab = first.distance(first);
+        double ac = second.distance(second);
+        double bc = third.distance(third);
         double ap = period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
-
-
-            rsl = -1;
+            rsl = Math.sqrt(ap(ap - )*(ap - )*(ap - ));
         }
+        return rsl;
     }
 
     public static void main(String[] args) {
