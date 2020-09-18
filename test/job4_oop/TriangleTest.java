@@ -8,6 +8,7 @@ import org.junit.Test;
 
 public class TriangleTest {
 
+
     @org.junit.Test
     public void period() {
         Point a = new Point(0, 0);

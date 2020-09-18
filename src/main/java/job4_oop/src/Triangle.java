@@ -10,7 +10,6 @@ public class Triangle {
         this.second = bp;
         this.third = cp;
     }
-
     public static double period(double a, double b, double c) {
         double prd = (a + b + c) / 2;
         return prd;
