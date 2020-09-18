@@ -1,3 +1,5 @@
+package job4_oop.src;
+
 public class Excersices {
     public static void main(String[] args) {
         int matrix[][] = {  {1, 2}, {3, 4}} ;

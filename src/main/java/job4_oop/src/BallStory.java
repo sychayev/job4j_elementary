@@ -1,3 +1,5 @@
+package job4_oop.src;
+
 public class BallStory {
     public static void main(String[] args) {
         System.out.println("This is a story about adventure the ball!!");

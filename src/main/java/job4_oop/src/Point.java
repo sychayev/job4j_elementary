@@ -1,3 +1,5 @@
+package job4_oop.src;
+
 public class Point {
     private int x;
     private int y;

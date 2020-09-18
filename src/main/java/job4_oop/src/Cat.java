@@ -1,3 +1,5 @@
+package job4_oop.src;
+
 public class Cat {
     private String food;
     private String name;

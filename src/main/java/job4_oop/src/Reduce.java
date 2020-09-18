@@ -1,3 +1,5 @@
+package job4_oop.src;
+
 public class Reduce {
     private int [] array;
     public void to(int [] array){

@@ -1,3 +1,5 @@
+package job4_oop.src;
+
 public class DummyDic {
     public static String engToRus(String eng) {
 

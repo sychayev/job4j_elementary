@@ -1,3 +1,5 @@
+package job4_oop.src;
+
 public class Student {
 
     public void music() {

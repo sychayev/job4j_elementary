@@ -1,3 +1,5 @@
+package job4_oop.src;
+
 public class Jukebox {
     public static void music(int position){
         if(position == 1){
