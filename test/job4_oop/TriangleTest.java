@@ -3,7 +3,9 @@ package job4_oop;
 import job4_oop.src.Point;
 import job4_oop.src.Triangle;
 
+import static org.hamcrest.Matchers.closeTo;
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 public class TriangleTest {
@@ -15,6 +17,6 @@ public class TriangleTest {
         Point c = new Point(0, 4);
         Triangle triangle = new Triangle(a, b, c);
         double rsl = triangle.area();
-//        assertThat(rsl, closeTo(8, 0.001));
+        assertThat(rsl, closeTo(8, 0.001));
     }
 }

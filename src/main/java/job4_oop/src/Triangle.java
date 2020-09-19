@@ -29,9 +29,9 @@ public class Triangle {
 
     public double area() {
         double rsl = -1;
-        double ab = first.distance(first);
-        double ac = second.distance(second);
-        double bc = third.distance(third);
+        double ab = first.distance(second);
+        double ac = first.distance(third);
+        double bc = second.distance(third);
         double ap = period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
             rsl = Math.sqrt(ap * (ap - ab) * (ap - ac) * (ap - bc));
@@ -41,6 +41,6 @@ public class Triangle {
 
     public static void main(String[] args) {
         System.out.println(Triangle.period(0, 4, 4));
-        System.out.println(Triangle.exist(0,4,4));
+        System.out.println(Triangle.exist(0, 4, 4));
     }
 }
