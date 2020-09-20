@@ -9,17 +9,12 @@ public class Max {
 
     public static int max(int first, int second, int third) {
         int result = first;
-        result = (second > first) && (second > third) ? second : third;
-        result = (third > first) && (third > second) ? third : first;
-        int temp = max(first, second);
-        return max(temp, third);
+        return   max(max(first,second),third);
 
     }
 
     public static int max(int first, int second, int third, int fourth) {
         int result = 0;
-        result = (fourth > first) && (fourth > third)
-                && (fourth > second) ? fourth : third;
         int temp = max(first, second, third);
         return max(temp, fourth);
 
@@ -28,6 +23,6 @@ public class Max {
     public static void main(String[] args) {
         System.out.println(Max.max(10, 5));
         System.out.println(Max.max(1, 5, 2));
-        System.out.println(Max.max(10, 5, 3, 11));
+        System.out.println(Max.max(15, 5, 3, 11));
     }
 }
