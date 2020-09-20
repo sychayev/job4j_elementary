@@ -21,6 +21,7 @@ public class Student {
     }
 
     public void setGroup(char group) {
+
         this.group = group;
     }
 
