@@ -13,4 +13,5 @@ public class Doctor extends Profession{
         public char grpTablet(char groupTablets){
             return groupTablets;
         }
+
 }

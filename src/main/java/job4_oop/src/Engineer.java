@@ -14,5 +14,4 @@ public class Engineer extends Profession {
     public char grpShem(char groupShem){
         return groupShem;
     }
-
 }

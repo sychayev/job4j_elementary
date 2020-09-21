@@ -5,6 +5,7 @@ public class Dentist extends Doctor {
     private int numbersPeople;
     private char noisePeople;
 
+
     public void toHeal() {
 
     }

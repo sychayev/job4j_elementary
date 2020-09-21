@@ -37,7 +37,6 @@ public class Profession {
     public void setBirthdayDay(int birthdayDay) {
         this.birthdayDay = birthdayDay;
     }
-
     public static void main(String[] args) {
         Dentist dent = new Dentist ();
         Doctor d = new Doctor();
