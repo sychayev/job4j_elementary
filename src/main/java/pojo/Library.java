@@ -22,16 +22,11 @@ public class Library {
             System.out.println(bk.getName() + " - " + bk.getQuantityPages());
         }
         System.out.println("Changing place books! ");
-        int n = cycle.length;
-        for (int i = 0; i < n - 1; i++) {
-            Book temp = cycle[n - i - 1];
-            cycle[n - i - 1] = cycle[i];
-            cycle[i] = temp;
-        }
-        for (int i = 0; i < cycle.length; i++) {
+        cycle[0] = book4;
+        cycle[3] = book1;
+        for (int i = 0;i < cycle.length;i++){
             Book b = cycle[i];
-            System.out.println(b.getName() + " - " + b.getQuantityPages());
+            System.out.println(b.getName() + " " + b.getQuantityPages());
         }
-
     }
 }
