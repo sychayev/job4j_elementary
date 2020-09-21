@@ -9,4 +9,8 @@ public class Machine {
         int size = 0;
         return Arrays.copyOf(rsl,size);
     }
+    public double change(){
+        double rsl = 0;
+        return rsl;
+    }
 }

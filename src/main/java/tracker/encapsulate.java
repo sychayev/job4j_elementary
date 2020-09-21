@@ -1,3 +1,5 @@
+package tracker;
+
 public class encapsulate {
     public class Config {
         private String name;
