@@ -11,6 +11,7 @@ public class Library {
         cycle[1] = book2;
         cycle[2] = book3;
         cycle[3] = book4;
+
         for (int i = 0; i < cycle.length; i++) {
             Book b = cycle[i];
             System.out.println(b.getName() + " - " + b.getQuantityPages());
