@@ -18,16 +18,16 @@ public class Matches {
             player2 = in.nextInt();
             int sum2 = sum1 - player2;
             System.out.println(sum2);
-            for (int i = count; i <= matches; i++) { int res = matches - count;
+            count = sum1 + sum2;
+            int res = matches - count;
+            for (int i = 0; i <= res; i++) {
+                res++;
                 if (res == 0) {
                     System.out.println("You won!!");
-                    run = false;
-                    break;
-                }else{
-                    continue;
                 }
-
+                run = false;
             }
+
         }
     }
 }
