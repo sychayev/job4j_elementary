@@ -6,11 +6,14 @@ public class Engineer extends Profession {
     private char groupShem;
 
     public void nmeShem(String nameShem) {
+        this.nameShem = nameShem;
     }
 
     public void nmbrShem(int numberShem) {
+        this.numberShem= numberShem;
     }
 
     public void grpShem(char groupShem) {
+        this.groupShem = groupShem;
     }
 }

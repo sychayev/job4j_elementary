@@ -39,6 +39,7 @@ public class Profession {
     }
 
     public static void main(String[] args) {
+
         Dentist dent = new Dentist();
         Doctor d = new Doctor();
         Engineer e = new Engineer();

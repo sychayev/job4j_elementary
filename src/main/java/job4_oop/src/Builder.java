@@ -3,12 +3,12 @@ package job4_oop.src;
 import job4_oop.src.Engineer;
 
 public class Builder extends Engineer {
-    private Engineer build;
-    private Engineer numbersBuldings;
-    private Engineer namesBuildings;
-
+    private char build;
+    private int numbersBuldings;
+    private String namesBuildings;
 
     public void bld() {
+
 
     }
 

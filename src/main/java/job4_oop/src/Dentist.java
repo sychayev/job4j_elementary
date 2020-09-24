@@ -1,9 +1,9 @@
 package job4_oop.src;
 
 public class Dentist extends Doctor {
-    private Doctor toHealPeople;
-    private Doctor numbersPeople;
-    private Doctor noisePeople;
+    private String toHealPeople;
+    private int numbersPeople;
+    private char noisePeople;
 
     public void toHeal() {
 
