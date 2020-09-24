@@ -6,55 +6,51 @@ public class Profession {
     private String education;
     private int birthdayDay;
 
-    public String getName() {
-        return name;
+    public void getName() {
+
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
+    public void getSurname() {
+
     }
 
     public void setSurname(String surname) {
         this.surname = surname;
     }
 
-    public String getEducation() {
-        return education;
+    public void getEducation() {
+
     }
 
     public void setEducation(String education) {
         this.education = education;
     }
 
-    public int getBirthdayDay() {
-        return birthdayDay;
+    public void getBirthdayDay() {
+
     }
 
     public void setBirthdayDay(int birthdayDay) {
         this.birthdayDay = birthdayDay;
     }
+
     public static void main(String[] args) {
-        Dentist dent = new Dentist ();
+        Dentist dent = new Dentist();
         Doctor d = new Doctor();
         Engineer e = new Engineer();
         Builder buld = new Builder();
-
-        dent.toHeal();
-        dent.nmbPeople();
+        Profession p = new Dentist();
         dent.nsePeople();
-        d.Receipt("Receipt");
-        d.grpTablet('B');
-        d.nmbrReceipt(5);
+        dent.nmbrReceipt(3);
+        dent.nmbPeople();
+        dent.toHeal();
 
-        e.nmeShem("Electrical");
-        e.grpShem('E');
-        e.nmbrShem(3);
         buld.bld();
-        buld.nmbBuldings();
         buld.nmsBuildings();
+        buld.nmbBuldings();
     }
 }

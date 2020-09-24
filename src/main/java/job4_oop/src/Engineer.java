@@ -5,13 +5,12 @@ public class Engineer extends Profession {
     private int numberShem;
     private char groupShem;
 
-        public String nmeShem(String nameShem){
-        return nameShem;
+    public void nmeShem(String nameShem) {
     }
-    public int nmbrShem(int numberShem){
-        return numberShem;
+
+    public void nmbrShem(int numberShem) {
     }
-    public char grpShem(char groupShem){
-        return groupShem;
+
+    public void grpShem(char groupShem) {
     }
 }

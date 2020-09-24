@@ -4,14 +4,14 @@ public class Doctor extends Profession{
     private String receipt;
     private int numberReceipt;
     private char groupTablets;
-        public String Receipt(String receipt){
-            return receipt;
+        public void Receipt(String receipt){
+
         }
-        public int nmbrReceipt(int numberReceipt){
-            return numberReceipt;
+        public void nmbrReceipt(int numberReceipt){
+
         }
-        public char grpTablet(char groupTablets){
-            return groupTablets;
+        public void grpTablet(char groupTablets){
+
         }
 
 }
