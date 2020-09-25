@@ -3,6 +3,7 @@ package io;
 import java.util.Scanner;
 
 public class Matches {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         boolean run = true;
@@ -17,13 +18,14 @@ public class Matches {
                 matches = matches - count;
                 player = !player;
                 System.out.println(matches);
-            }  else {
+            } else {
                 System.out.println("You entered not right number!!");
             }
-           if (matches == 0) {
-                System.out.println( "You won.Congratulation!!");
-            }
-
+        }
+        if (matches == 0 && player != player) {
+            System.out.println("You won.Congratulation - gamer1");
+        } else if (matches == 0 && player == player) {
+            System.out.println("You won.Congratulation - gamer2 ");
         }
     }
 }
