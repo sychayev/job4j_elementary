@@ -7,27 +7,29 @@ public class Matches {
         Scanner in = new Scanner(System.in);
         boolean run = true;
         int matches = 11;
-        int player1, player2;
-        int count = 0;
-        while (run) {
-            System.out.println("Enter  your number player1 from 1 to 3");
-            player1 = in.nextInt();
-            int sum1 = matches - player1;
-            System.out.println(sum1);
-            System.out.println("Enter  your number player2 from 1 to 3");
-            player2 = in.nextInt();
-            int sum2 = sum1 - player2;
-            System.out.println(sum2);
-            count = sum1 + sum2;
-            int res = matches - count;
-            for (int i = 0; i <= res; i++) {
-                res++;
-                if (res == 0) {
-                    System.out.println("You won!!");
-                }
-                run = false;
+        int count1 = 0;
+        int count2 = 0;
+        boolean player = true;
+        while (run){
+            String name = player ? "gamer1" : "gamer2";
+            System.out.println("Enter your number from 1 to 3 - " + name);
+            count1 = in.nextInt();
+            if (count1 < 1 || count1 > 3) {
+                System.out.println("You entered not right number ");
             }
 
+            String name1 = player ? "gamer2" : "gamer1";
+            System.out.println("Enter your number from 1 to 3 " + name1);
+            count2 = in.nextInt();
+            if (count2 < 1 || count2 > 3) {
+                System.out.println("You entered not right number ");
+            }
+            int sum = count1 + count2;
+            int sub = matches - sum;
+            System.out.println(sub);
+            if (sub == 0) {
+                run = false;
+            }
         }
     }
 }
