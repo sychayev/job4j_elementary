@@ -8,7 +8,6 @@ import static org.junit.Assert.*;
 public class MachineTest {
 
     @Test
-
     public void whenEquals() {
         Machine machine = new Machine();
         int[] expected = {};
