@@ -10,6 +10,7 @@ import org.junit.Test;
 public class ShopDropTest {
 
     @Test
+
     public void whenDropFirst() {
         Product[] products = new Product[2];
         products[0] = new Product("Milk", 10);
