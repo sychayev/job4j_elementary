@@ -17,16 +17,14 @@ public class Matches {
             count = in.nextInt();
             if (count > 0 && count < 4) {
                 matches = matches - count;
-                player = !player;
+                if(matches > 0) {
+                    player = !player;
+                }
                 System.out.println(matches);
             } else {
                 System.out.println("You entered not right number!!");
             }
         }
-        if (matches == 0 ) {
-            System.out.println("You won.Congratulation - gamer1" + name);
-        } else if (matches == 0 ) {
-            System.out.println("You won.Congratulation - gamer2" + name);
-        }
+        System.out.println("You won.Congratulation - gamer1" + name);
     }
 }
