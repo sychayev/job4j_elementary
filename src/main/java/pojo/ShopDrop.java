@@ -9,7 +9,7 @@ public class ShopDrop {
             System.out.println(product.getName());
 
         }
-        for(int i = 0;i < prod.length;i++){
+        for(int i = index;i < prod.length;i++){
             prod[i]=prod[i + 1];
         }
         prod[prod.length - 1]=null;
