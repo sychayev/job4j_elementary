@@ -10,8 +10,9 @@ public class Matches {
         int matches = 11;
         int count = 0;
         boolean player = true;
+        String name = "";
         while (matches > 0) {
-            String name = player ? "gamer1" : "gamer2";
+            name = player ? "gamer1" : "gamer2";
             System.out.println("Enter your number from 1 to 3 - " + name);
             count = in.nextInt();
             if (count > 0 && count < 4) {
@@ -22,10 +23,10 @@ public class Matches {
                 System.out.println("You entered not right number!!");
             }
         }
-        if (matches == 0 && player != player) {
-            System.out.println("You won.Congratulation - gamer1");
-        } else if (matches == 0 && player == player) {
-            System.out.println("You won.Congratulation - gamer2 ");
+        if (matches == 0 ) {
+            System.out.println("You won.Congratulation - gamer1" + name);
+        } else if (matches == 0 ) {
+            System.out.println("You won.Congratulation - gamer2" + name);
         }
     }
 }
