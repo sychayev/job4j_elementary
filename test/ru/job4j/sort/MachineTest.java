@@ -9,6 +9,7 @@ public class MachineTest {
 
     @Test
     public void whenEquals() {
+
         Machine machine = new Machine();
         int[] expected = {};
         int[] rsl = machine.change(100, 100);
