@@ -1,9 +1,9 @@
 package tracker;
 
+import java.awt.*;
 import java.util.Arrays;
 
 public class Tracker {
-    private  Item i;
     private final Item[] items = new Item[100];
     private int ids = 1;
     private int size = 0;
@@ -16,17 +16,13 @@ public class Tracker {
     }
 
     public Item[] findAll() {
-        for(int i =0;i <size;i++){
-
-        }
         return Arrays.copyOf(items, size);
     }
-
     public Item[] findByName(String key) {
         Item it = new Item();
-        for (int i = 0; i < items.length; i++) {
-            if(it.getName()!= key){
-
+        int[] mas = new int[items.length];
+        for (int i = 0; i < mas.length; i++) {
+            if (it.getName() != key) {
             }
         }
         return Arrays.copyOf(items, size);
