@@ -12,8 +12,8 @@ public class Machine {
         for (int i = 0; i < COINS.length; i++) {
             while (balance >= COINS[i]) {
                 balance -= COINS[i];
-                size++;
                 rsl[size] = COINS[i];
+                size++;
             }
         }
         return Arrays.copyOf(rsl, size);
