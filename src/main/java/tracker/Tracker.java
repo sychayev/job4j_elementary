@@ -28,7 +28,6 @@ public class Tracker {
                 count++;
             }
         }
-
         return Arrays.copyOf(rsl, count);
     }
 

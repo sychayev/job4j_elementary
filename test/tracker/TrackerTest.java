@@ -11,7 +11,12 @@ public class TrackerTest {
     public void whenFindByName() {
         Tracker track = new Tracker();
         Item i = new Item();
-        String key = i.getName();
-        assertThat(track.findByName(key),is(i.getName()));
+        track.add(i);
+        Item it = new Item();
+        it.setName("A");
+        String key = it.getName();
+        track.findByName(key);
+        assertThat(track.findByName(key),is(it.getName()));
     }
+
 }
