@@ -12,6 +12,6 @@ public class TrackerTest {
         Tracker track = new Tracker();
         Item i = new Item();
         String key = i.getName();
-        assertThat(track.findByName(key),is(key));
+        assertThat(track.findByName(key),is(i.getName()));
     }
 }
