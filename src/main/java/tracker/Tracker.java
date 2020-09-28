@@ -23,15 +23,16 @@ public class Tracker {
         int count =0;
        Item[]rsl = new Item[size];
         for (int i = items.length; i < size; i++) {
-            if (rsl[count] == items[i] ) {
+            if ( items[i].getName().equals(key)) {
+                rsl[count] = items[i];
                 count++;
             }
         }
         return Arrays.copyOf(rsl, count);
     }
 
-    public Item findById(int id) {
-        int i = indexOf(id);
-        return  i != -1 ? items[i] : null;
-    }
+//    public Item findById(int id) {
+//        int i = indexOf(id);
+//        return  i != -1 ? items[i] : null;
+//    }
 }
