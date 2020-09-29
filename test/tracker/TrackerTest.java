@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 public class TrackerTest {
 
     @Test
+
     public void whenFindByName() {
         Tracker track = new Tracker();
         Item it = new Item();
