@@ -7,6 +7,7 @@ public class Machine {
         int[] COINS = {10, 5, 2, 1};
         int[] rsl = new int[100];
         int size = 0;
+
         int balance = 0;
         System.out.println(balance = money - price);
         for (int i = 0; i < COINS.length; i++) {

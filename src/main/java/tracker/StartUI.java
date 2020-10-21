@@ -5,7 +5,7 @@ public class StartUI {
         Item i = new Item();
         Tracker track = new Tracker();
         track.add(i);
-        System.out.println(track.findById(3));
+//        System.out.println(track.findById(3));
 
     }
 }

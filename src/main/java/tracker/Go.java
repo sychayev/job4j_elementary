@@ -6,6 +6,6 @@ public class Go {
         System.out.println(b.fuelGassoline(9));
         System.out.println(b.numbersPassanger(35));
         System.out.println(b.go());
-        b.
+
     }
 }
